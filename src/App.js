@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import { Grid } from '@material-ui/core';
 import youtube from "./api/youtube";
 import { SearchBar, VideoDetail, VideoList } from './components';
@@ -12,7 +12,7 @@ function App() {
             <Grid item xs={12}>
                 <Grid container spacing={10}>
                     <Grid item xs={12}>
-                        <h1><span>⚡Stream Lite⚡</span></h1>
+                        <h1>⚡Stream Lite⚡</h1>
                     </Grid>
                     <Grid item xs={12}>
                         <SearchBar onSubmit={handleSubmit} />

@@ -10,7 +10,7 @@ function SearchBar(props) {
      
     }
     function onKeyPress(event) {
-        if(event.key=='Enter')
+        if(event.key==='Enter')
         {
             props.onSubmit(searchTerm);   
         }

@@ -2,7 +2,7 @@ import React from 'react';
 import { Paper, Typography } from "@material-ui/core";
 
 function VideoDetail(props) {
-    if (!props.video) return <div><div>Press Enter</div> <img width="100" src="https://cdn.wallpapersafari.com/51/45/hl5vyB.png"></img></div>;
+    if (!props.video) return <div><div>Press Enter</div> <img width="100" src="https://cdn.wallpapersafari.com/51/45/hl5vyB.png" alt="thunder"></img></div>;
 
     const videoSrc = `https://www.youtube.com/embed/${props.video.id.videoId}`;
     console.log(videoSrc);
