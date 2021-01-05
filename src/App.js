@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import { Grid } from '@material-ui/core';
 import youtube from "./api/youtube";
 import { SearchBar, VideoDetail, VideoList } from './components';
-
+import dotenv from  'dotenv';
 function App() {
     const [videos, setVideos] = useState([]);
     const [selectedVideo, setSelectedVideo] = useState(null);
-
+    dotenv.config();
     return (
-        <Grid style={{ justify: "center" }} container spacing={10}>
+        <Grid style={{ justify: "center" }} container spacing={3}>
             <Grid item xs={12}>
                 <Grid container spacing={10}>
-                    <Grid item xs={12}>
+                    <Grid item xs={10}>
                         <h1>⚡Stream Lite⚡</h1>
                     </Grid>
                     <Grid item xs={12}>
